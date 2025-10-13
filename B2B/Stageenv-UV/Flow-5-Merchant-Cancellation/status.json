@@ -1,0 +1,26 @@
+{
+  "context": {
+    "domain": "ONDC:RET10",
+    "location": {
+      "city": {
+        "code": "std:080"
+      },
+      "country": {
+        "code": "IND"
+      }
+    },
+    "action": "status",
+    "version": "2.0.2",
+    "bap_id": "stageenv-uv.ycnwan.com",
+    "bap_uri": "https://stageenv-uv.ycnwan.com/bap",
+    "transaction_id": "5ca57c56-2960-4941-bb37-9d8f773508b5",
+    "message_id": "ebf794b1-e503-4d33-8b9b-33af03514b6d",
+    "timestamp": "2025-10-08T18:16:42.927Z",
+    "ttl": "PT30S",
+    "bpp_id": "mock.ondc.org/api",
+    "bpp_uri": "https://mock.ondc.org/api/retail/bpp"
+  },
+  "message": {
+    "order_id": "6c804f08-7882-47e4-a5ae-d6cb60ae522e"
+  }
+}

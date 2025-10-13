@@ -1,0 +1,105 @@
+{
+  "context": {
+    "domain": "ONDC:RET10",
+    "location": {
+      "city": {
+        "code": "std:080"
+      },
+      "country": {
+        "code": "IND"
+      }
+    },
+    "action": "select",
+    "version": "2.0.2",
+    "bap_id": "stageenv-uv.ycnwan.com",
+    "bap_uri": "https://stageenv-uv.ycnwan.com/bap",
+    "bpp_id": "mock.ondc.org/api",
+    "bpp_uri": "https://mock.ondc.org/api/retail/bpp",
+    "transaction_id": "461eab3a-f5e7-4139-af7a-c04df6ec887e",
+    "message_id": "5a92e98d-f54d-4633-a087-4bb2ca636849",
+    "timestamp": "2025-10-08T16:28:35.755Z",
+    "ttl": "PT30S"
+  },
+  "message": {
+    "order": {
+      "provider": {
+        "id": "P1",
+        "locations": [
+          {
+            "id": "L1"
+          }
+        ]
+      },
+      "items": [
+        {
+          "id": "I1",
+          "location_ids": [
+            "L1"
+          ],
+          "fulfillment_ids": [
+            "1"
+          ],
+          "quantity": {
+            "selected": {
+              "count": 200
+            }
+          },
+          "add_ons": []
+        }
+      ],
+      "fulfillments": [
+        {
+          "id": "1",
+          "type": "Delivery",
+          "stops": [
+            {
+              "type": "end",
+              "location": {
+                "gps": "12.974002,77.613458",
+                "area_code": "560001",
+                "city": {
+                  "name": "Bengaluru"
+                },
+                "country": {
+                  "code": "IND"
+                },
+                "state": {
+                  "name": "Karnataka"
+                }
+              },
+              "contact": {
+                "phone": "9886098860"
+              }
+            }
+          ]
+        }
+      ],
+      "payments": [
+        {
+          "type": "PRE-FULFILLMENT"
+        }
+      ],
+      "tags": [
+        {
+          "descriptor": {
+            "code": "buyer_id"
+          },
+          "list": [
+            {
+              "descriptor": {
+                "code": "buyer_id_code"
+              },
+              "value": "gst"
+            },
+            {
+              "descriptor": {
+                "code": "buyer_id_no"
+              },
+              "value": "06AAJCV2160Q1ZU"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

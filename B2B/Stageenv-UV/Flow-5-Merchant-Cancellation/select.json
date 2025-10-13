@@ -1,0 +1,110 @@
+{
+  "context": {
+    "domain": "ONDC:RET10",
+    "location": {
+      "city": {
+        "code": "std:080"
+      },
+      "country": {
+        "code": "IND"
+      }
+    },
+    "action": "select",
+    "version": "2.0.2",
+    "bap_id": "stageenv-uv.ycnwan.com",
+    "bap_uri": "https://stageenv-uv.ycnwan.com/bap",
+    "transaction_id": "5ca57c56-2960-4941-bb37-9d8f773508b5",
+    "message_id": "6757b482-8036-4563-ae8c-515204f66542",
+    "timestamp": "2025-10-08T18:14:33.348Z",
+    "ttl": "PT30S",
+    "bpp_id": "mock.ondc.org/api",
+    "bpp_uri": "https://mock.ondc.org/api/retail/bpp"
+  },
+  "message": {
+    "order": {
+      "provider": {
+        "id": "P1",
+        "locations": [
+          {
+            "id": "L1"
+          }
+        ],
+        "ttl": "PT30S"
+      },
+      "items": [
+        {
+          "id": "I1",
+          "location_ids": [
+            "L1"
+          ],
+          "fulfillment_ids": [
+            "1"
+          ],
+          "quantity": {
+            "selected": {
+              "count": 200
+            }
+          },
+          "add_ons": [
+            {
+              "id": "78787723"
+            }
+          ]
+        }
+      ],
+      "fulfillments": [
+        {
+          "id": "1",
+          "type": "Delivery",
+          "stops": [
+            {
+              "type": "end",
+              "location": {
+                "gps": "12.974002,77.613458",
+                "area_code": "560001",
+                "city": {
+                  "name": "Bengaluru"
+                },
+                "country": {
+                  "code": "IND"
+                },
+                "state": {
+                  "name": "Karnataka"
+                }
+              },
+              "contact": {
+                "phone": "9886098860"
+              }
+            }
+          ]
+        }
+      ],
+      "payments": [
+        {
+          "type": "PRE-FULFILLMENT"
+        }
+      ],
+      "tags": [
+        {
+          "descriptor": {
+            "code": "buyer_id"
+          },
+          "list": [
+            {
+              "descriptor": {
+                "code": "buyer_id_code"
+              },
+              "value": "gst"
+            },
+            {
+              "descriptor": {
+                "code": "buyer_id_no"
+              },
+              "value": "xxxxxxxxxxxxxxx"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

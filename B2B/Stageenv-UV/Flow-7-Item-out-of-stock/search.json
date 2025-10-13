@@ -1,0 +1,80 @@
+{
+  "context": {
+    "domain": "ONDC:RET10",
+    "location": {
+      "city": {
+        "code": "std:080"
+      },
+      "country": {
+        "code": "IND"
+      }
+    },
+    "action": "search",
+    "version": "2.0.2",
+    "bap_id": "stageenv-uv.ycnwan.com",
+    "bap_uri": "https://stageenv-uv.ycnwan.com/bap",
+    "transaction_id": "73019d73-a7a4-4ce4-8c58-314caef62713",
+    "message_id": "62259b9f-61f3-4b5c-89e5-c424f5a79d01",
+    "timestamp": "2025-10-08T18:00:46.586Z",
+    "ttl": "PT30S"
+  },
+  "message": {
+    "intent": {
+      "fulfillment": {
+        "type": "Delivery",
+        "stops": [
+          {
+            "type": "end",
+            "location": {
+              "gps": "12.974002,77.613458",
+              "area_code": "560001"
+            }
+          }
+        ]
+      },
+      "payment": {
+        "type": "PRE-FULFILLMENT"
+      },
+      "tags": [
+        {
+          "descriptor": {
+            "code": "bap_terms"
+          },
+          "list": [
+            {
+              "descriptor": {
+                "code": "finder_fee_type"
+              },
+              "value": "percent"
+            },
+            {
+              "descriptor": {
+                "code": "finder_fee_amount"
+              },
+              "value": "10"
+            }
+          ]
+        },
+        {
+          "descriptor": {
+            "code": "buyer_id"
+          },
+          "list": [
+            {
+              "descriptor": {
+                "code": "buyer_id_code"
+              },
+              "value": "gst"
+            },
+            {
+              "descriptor": {
+                "code": "buyer_id_no"
+              },
+              "value": "06AAJCV2160Q1ZU"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
